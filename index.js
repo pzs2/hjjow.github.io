@@ -10,7 +10,7 @@ window.onload = function () {
     const region = 'us'
     const nameList = ['Jay3-11894', 'sb']
     nameList.map(tag => {
-        axios.get(`http://owapi.io/profile/pc/${region}/${tag}`).then(res => {
+        axios.get(`https://owapi.io/profile/pc/${region}/${tag}`).then(res => {
             if (res.status === 200 && res.data) {
                 const user = res.data
                 renderUser(user)
